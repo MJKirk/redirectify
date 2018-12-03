@@ -39,7 +39,8 @@ function fix(request, pattern, replacement, bypassDomain) {
   //             middle-clicking a PDF link on arXiv opens the abstract page.
   oldHost = new URL(request.originUrl || request.initiator || 'http://example.com').hostname;
   newHost = bypassDomain || new URL(request.url).hostname;
-  if (! ('.' + oldHost).endsWith(newHost)) {
+  // Terrible hack to stop pdf links from inspire being rewritten
+  if (! ('.' + oldHost).endsWith(newHost) && ! ('.' + oldHost).endsWith('inspirehep.net')) {
     newUrl = request.url.replace(pattern, replacement);
     if (newUrl != request.url)
       return { redirectUrl: newUrl };
