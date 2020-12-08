@@ -11,15 +11,6 @@
   "permissions": [
     "*://*.arxiv.org/pdf/*",
     "*://xxx.lanl.gov/pdf/*",
-    "*://arxiv-export-lb.library.cornell.edu/pdf/*",
-    "*://*.openreview.net/pdf*",
-    "*://proceedings.mlr.press/*.pdf",
-    "*://*.jmlr.org/papers/*.pdf",
-    "*://jmlr.csail.mit.edu/papers/*.pdf",
-    "*://delivery.acm.org/*",
-    "*://papers.nips.cc/*.pdf",
-    "*://pdfs.semanticscholar.org/*",
-    "*://*.biorxiv.org/content*",
     "webRequest",
     "webRequestBlocking"
   ],
