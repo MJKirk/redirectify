@@ -10,7 +10,7 @@
 //   This match pattern must also be added to the permissions in the manifest.
 //   (Manually or with update_manifest_hosts.py)
 // - pattern and replace are used for regex rewriting of the URL
-// - rewriting is abandonded if a request is initiated at a subdomain of
+// - rewriting is abandoned if a request is initiated at a subdomain of
 //   bypassDomain, or from the same domain as the requested URL.
 //
 // Iain Murray, March 2018.
