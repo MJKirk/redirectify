@@ -17,7 +17,7 @@
 
 RULES = [
   ["*://*.arxiv.org/pdf/*", /(.*)\/pdf\/(.*?)(\.pdf)?$/, '$1/abs/$2', '.inspirehep.net'],
-  ["*://xxx.lanl.gov/pdf/*", /(.*)\/pdf\/(.*?)(\.pdf)?$/, '$1/abs/$2'],
+  ["*://xxx.lanl.gov/*", /.*xxx\.lanl\.gov\/(.*)/, 'https://arxiv.org/$1']
 ];
 
 var browser = browser || chrome;
