@@ -27,8 +27,8 @@ function fix(request, pattern, replacement, bypassDomain) {
   //             Unfortunately .initiator is missing for new tabs, so in Chrome
   //             middle-clicking a PDF link on arXiv opens the abstract page.
   oldHost = new URL(request.originUrl || request.initiator || 'http://example.com').hostname;
-  newHost = bypassDomain || new URL(request.url).hostname;
-  if (! ('.' + oldHost).endsWith(newHost)) {
+  newHost = new URL(request.url).hostname;
+  if (!( ( '.' + oldHost).endsWith(newHost) || ('.' + oldHost).endsWith(bypassDomain) )) {
     newUrl = request.url.replace(pattern, replacement);
     if (newUrl != request.url)
       return { redirectUrl: newUrl };
