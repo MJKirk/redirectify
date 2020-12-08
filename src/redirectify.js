@@ -13,6 +13,7 @@
 // - rewriting is abandoned if a request is initiated at a subdomain of
 //   bypassDomain, or from the same domain as the requested URL.
 //
+// Matthew Kirk, December 2020.
 // Iain Murray, March 2018.
 
 RULES = [

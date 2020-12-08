@@ -1,12 +1,12 @@
 {
 
   "manifest_version": 2,
-  "name": "Redirectify",
-  "version": "0.2.4",
+  "name": "RedirectifyMJKirk",
+  "version": "0.3",
 
   "description": "Redirects requests for PDFs of papers at some popular sites to their corresponding HTML index pages.",
 
-  "homepage_url": "https://github.com/imurray/redirectify",
+  "homepage_url": "https://github.com/mjkirk/redirectify",
 
   "permissions": [
     "*://*.arxiv.org/pdf/*",
